@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #0f0;
+}
+#scr {
+    width: 960px;
+    height: 540px;
+}

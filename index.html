@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+ <head>
+  <title>MIDI visualiser</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="vis.js"></script>
+  <script src="midi.js"></script>
+  <script>
+window.onload = () => {
+    v = new Vis();
+    m = new MIDI();
+    m.connect().then(function() {
+        m.subscribe(v);
+    });
+};
+  </script>
+ </head>
+ <body>
+  <canvas id="scr"></canvas>
+ </body>
+</html>
